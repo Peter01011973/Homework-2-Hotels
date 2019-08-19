@@ -1,12 +1,21 @@
-
-#g0 {
+* {
+    margin: 0;
+    padding: 0;
+  }
+/* #g0 {
     background-color: aliceblue;
     border: solid 2px black;
 }
 #g1 {
     background-color: blue;
     border: solid red;
+} */
+.circle {
+    width: 150px;
+    box-shadow: 0 0 7px #777; 
+   } 
+
+.abouthotel:hover {
+    background-color: aliceblue;
+    border: solid 2px black;
 }
-.round {
-    border-radius: 50%;
-   }
