@@ -5,6 +5,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
+
 @NgModule({
   declarations: [],
   imports: [
@@ -14,7 +15,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     MatButtonModule,
     MatCheckboxModule,
     BrowserAnimationsModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,    
   ]
 })
 export class SharedModuleModule { }
