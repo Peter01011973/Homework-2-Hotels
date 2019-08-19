@@ -1,4 +1,11 @@
-<div *ngFor="let hotel of hotels">
-    <h3>{{hotel.title}}</h3>
+<div *ngFor="let hotel of hotels; let i = index">
+    <div id="g{{i}}" class="hotel">
+        <h5 style="color: rgb(75, 56, 22)">{{hotel.title}}</h5>
+        <p>{{hotel.address}}</p>
+        <p>{{hotel.description}}</p>
+        <h6>{{hotel.phone}}</h6>
+        <img src="assets/images/res.jpeg" alt="" class="round">
+        <img src="assets/images/r1.jpg" alt="" class="round">
+    </div>
 
 </div>

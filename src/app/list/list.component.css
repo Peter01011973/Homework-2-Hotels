@@ -1,0 +1,12 @@
+
+#g0 {
+    background-color: aliceblue;
+    border: solid 2px black;
+}
+#g1 {
+    background-color: blue;
+    border: solid red;
+}
+.round {
+    border-radius: 50%;
+   }
