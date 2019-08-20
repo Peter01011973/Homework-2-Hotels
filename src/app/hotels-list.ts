@@ -26,7 +26,7 @@
       address: 'Orlando',
       description: 'Best one!',
       phone: '+3242353434',
-      picture: 'assets/images/1.jpg',
+      picture: 'assets/images/1.jpeg',
       photos: [
         'assets/images/res.jpg',
         'assets/images/r1.jpg'
@@ -39,7 +39,7 @@
       profile: {
         followers: 112,
         following: 11,
-        photo: 'assets/images/b1.jpg'
+        photo: 'assets/images/b1.jpeg'
       },
       stars: 3
     },
@@ -49,7 +49,7 @@
       address: 'Kharkov',
       description: 'Five Stars',
       phone: '+3242353434',
-      picture: 'assets/images/2.jpg',
+      picture: 'assets/images/2.jpeg',
       photos: [
         'assets/images/res.jpg',
         'assets/images/r1.jpg'
@@ -62,7 +62,7 @@
       profile: {
         followers: 12,
         following: 111,
-        photo: 'assets/images/b2.jpg'
+        photo: 'assets/images/b2.jpeg'
       },
       stars: 4
     },
@@ -72,7 +72,7 @@
       address: 'Orlando',
       description: 'Lorem ipson0',
       phone: '+3242353434',
-      picture: 'assets/images/3.jpg',
+      picture: 'assets/images/3.jpeg',
       photos: [
         'assets/images/res.jpg',
         'assets/images/r1.jpg'
@@ -85,7 +85,7 @@
       profile: {
         followers: 45,
         following: 78,
-        photo: 'assets/images/b3.jpg'
+        photo: 'assets/images/b3.jpeg'
       },
       stars: 5
     }

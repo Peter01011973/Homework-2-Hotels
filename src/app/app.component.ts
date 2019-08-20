@@ -32,6 +32,16 @@ export class AppComponent implements OnInit {
   changeHotel(id:number) {
     this.id=id;
     this.weather=hotels[id]["weather"];
+    // this.weather.icon = 'assets/icons/sun.png';
+    switch (this.weather['icon']) {
+      case 'sun': this.weather.icon = 'assets/icons/sun.png';
+                  break;
+      case 'rain': this.weather.icon = 'assets/icons/rain.png';
+                  break;
+      case 'cloud': this.weather.icon = 'assets/icons/cloud.png';
+                  break;
+      default:    break;
+    }
     this.n=hotels[id]["profile"]["followers"];
     this.profile=hotels[id]["profile"];
   }

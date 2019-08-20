@@ -6,7 +6,7 @@ import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
   styleUrls: ['./list.component.css'],
   })
 export class ListComponent {
-  public pathImg: string = 'assets/images/1.jpg';
+  public pathImg: string = 'assets/images/1.jpeg';
   @Output() hotelChange = new EventEmitter();
   @Input() listhotels:Object[];
   
