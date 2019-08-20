@@ -1,22 +1,32 @@
-import { Component, OnInit } from '@angular/core';
-import { hotels } from '../hotels-list'
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css']
-})
-export class ListComponent implements OnInit {
-  public hotels = hotels;
-  public pathImg:string = 'assets/images/1.jpg';
-
-  constructor() { }
+  styleUrls: ['./list.component.css'],
+  })
+export class ListComponent {
+  public pathImg: string = 'assets/images/1.jpg';
+  @Output() hotelChange = new EventEmitter();
+  @Input() listhotels:Object[];
+  
+  constructor() { 
+  }
 
   ngOnInit() {
-  }
-  onClick() {
-//     pathImg = document.getElementsByClassName("abouthotel")[0].id;
-    this.pathImg = 'assets/images/2.jpg';
-//    window.alert(document.getElementsByClassName("abouthotel")[0].id);
+   }
+
+  onClick(e:any) {
+    function findPathByID(obj:Object[],id:number):string {
+      for (let i=0; i< obj.length; i++) {
+          if (id === obj[i]["id"]) {return obj[i]["picture"]}
+      }
+    }
+
+    e = e || window.event;
+    e =  e.target || e.srcElement;
+    let id:number = Number(e.id);
+    this.pathImg = findPathByID(this.listhotels,id);
+    this.hotelChange.emit(id);
   }
 }

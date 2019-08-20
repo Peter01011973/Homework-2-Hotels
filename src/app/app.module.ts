@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModuleModule } from './shared-module/shared-module.module';
 import { ListComponent } from './list/list.component';
+import { WeatherComponent } from './weather/weather.component';
+import { FrofileComponent } from './frofile/frofile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListComponent
+    ListComponent,
+    WeatherComponent,
+    FrofileComponent
   ],
   imports: [
     BrowserModule,
