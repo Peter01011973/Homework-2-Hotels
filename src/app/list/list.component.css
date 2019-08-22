@@ -1,15 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
-/* #g0 {
-    background-color: aliceblue;
-    border: solid 2px black;
-}
-#g1 {
-    background-color: blue;
-    border: solid red;
-} */
+
 .circle {
     width: 150px;
     box-shadow: 0 0 7px #777; 
@@ -17,4 +6,49 @@
 
 .abouthotel:hover {
     background-color: aliceblue;
+    display: flex;
 }
+
+.hotellist {
+    overflow: scroll;
+    overflow-x:hidden;
+    margin-left: 50px;
+    height: 330px;
+    box-shadow: 0 0 7px white;
+} 
+
+.abouthotel {
+    display: flex;
+    text-align: center;
+    box-shadow: 0 0 7px mediumslateblue;
+    background-color: #ECEC84;
+}
+.container {
+    display: flex;
+    background-color: #A299CA;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hotelimg {
+    max-width: 400px;
+    max-height: 330px;
+}
+ .block {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+} 
+p,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    margin-top: 10px;
+}
+
+

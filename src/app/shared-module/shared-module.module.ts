@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
-import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatGridListModule, MatListModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-
 
 @NgModule({
   declarations: [],
@@ -13,9 +12,10 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
   ],
   exports: [
     MatButtonModule,
-    MatCheckboxModule,
+    MatGridListModule,
     BrowserAnimationsModule,
-    NoopAnimationsModule,    
+    NoopAnimationsModule, 
+    MatListModule,
   ]
 })
 export class SharedModuleModule { }

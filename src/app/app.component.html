@@ -1,6 +1,12 @@
-<div id = "main-div" style="text-align:center">
-  <h1>The coolest hotels</h1>
-  <app-list [listhotels]="hotels" (hotelChange)='changeHotel($event)'></app-list>
-  <app-weather [weather]="weather"></app-weather>
-  <app-frofile [profile]="profile" [n]="n"></app-frofile>
+<h1>The coolest hotels</h1>
+<div class="main-container">
+  <div id="list">
+    <app-list [listhotels]="hotels" (hotelChange)='changeHotel($event)'></app-list>
+  </div>
+  <div id="weather">
+    <app-weather [weather]="weather"></app-weather>
+  </div>
+  <div id="profile"> 
+    <app-frofile [profile]="profile"></app-frofile>
+  </div>
 </div>

@@ -1,17 +1,18 @@
 <div class="container">
-    <img [src]='pathImg' class="img-thumbnail circle">
-
+    <img [src]='pathImg' class="img-thumbnail hotelimg">
+    <div class="hotellist">
     <div *ngFor="let hotel of listhotels" class="abouthotel">
-        <div id="g{{hotel.id}}" class="hotel">
-            <h5 style="color: rgb(75, 56, 22)">{{hotel.title}}</h5>
-            <p>{{hotel.address}}</p>
-            <p>{{hotel.description}}</p>
-            <h6>{{hotel.phone}}</h6>
-            <button class="btn btn-primary" id="{{hotel.id}}" (click)="onClick(this.id)">Select this one</button>
-        </div>
-        <div>
-            <img src="{{hotel.photos[0]}}" class="rounded-circle circle">
-            <img src="{{hotel.photos[1]}}" class="circle rounded-circle">
+            <div class="block">
+                <h5 style="color: rgb(75, 56, 22)">{{hotel.title}}</h5>
+                <div class="block">
+                    <img src="{{hotel.photos[0]}}" class="rounded-circle circle">
+                    <img src="{{hotel.photos[1]}}" class="circle rounded-circle">
+                </div>                
+                <p>{{hotel.address}}</p>
+                <p>{{hotel.description}}</p>
+                <h6>{{hotel.phone}}</h6>
+                <button class="btn btn-primary" id="{{hotel.id}}" (click)="onClick(this.id)">Select this one</button>
+            </div>
         </div>
     </div>
 </div>

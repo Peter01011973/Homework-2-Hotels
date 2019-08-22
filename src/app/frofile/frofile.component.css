@@ -1,4 +1,18 @@
 .circle {
-    width: 170px;
+    width: 100px;
     box-shadow: 0 0 7px #777; 
    } 
+
+h5 {
+    color: white;
+}
+
+.profile-container {
+    background-color:  #A299CA;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0px;
+    align-items: center;
+    /* vertical-align: middle; */
+    margin: 20px;
+}

@@ -1,0 +1,26 @@
+mat-grid-tile {
+  background-color: coral;  
+}
+
+h1 {
+    text-align: center;
+}
+.main-container {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: 350px 138px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+
+#list {
+    grid-column: 1 / -1;
+}
+
+#weather, #profile {
+    background-color:  #A299CA;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

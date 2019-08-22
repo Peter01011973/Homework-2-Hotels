@@ -34,7 +34,7 @@
       weather:  {
         temperature: 12,
         wind: 11,
-        icon: 'sun'
+        icon: 'assets/icons/sun.png'
       },
       profile: {
         followers: 112,
@@ -57,7 +57,7 @@
       weather:  {
         temperature: 5,
         wind: 4,
-        icon: 'rain'
+        icon: 'assets/icons/rain.png'
       },
       profile: {
         followers: 12,
@@ -80,7 +80,7 @@
       weather:  {
         temperature: -2,
         wind: 2,
-        icon: 'cloud'
+        icon: 'assets/icons/cloud.png'
       },
       profile: {
         followers: 45,

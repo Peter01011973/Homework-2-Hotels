@@ -12,6 +12,11 @@ export class WeatherComponent implements OnInit {
   @Input() weather: Object;
 
   ngOnInit() {
+    this.weather={
+      temperature: 12,
+      wind: 11,
+      icon: 'assets/icons/sun.png'
+    }
   }
 
 }
