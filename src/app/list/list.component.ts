@@ -6,27 +6,25 @@ import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
   styleUrls: ['./list.component.css'],
   })
 export class ListComponent {
-  public pathImg: string = 'assets/images/1.jpeg';
+  public pathImg = 'assets/images/1.jpeg';
   @Output() hotelChange = new EventEmitter();
-  @Input() listhotels:Object[];
-  
-  constructor() { 
-  }
+  @Input() listhotels: object[];
+    constructor() {
+    }
 
-  ngOnInit() {
-   }
-
-  onClick(e:any) {
-    function findPathByID(obj:Object[],id:number):string {
-      for (let i=0; i< obj.length; i++) {
-          if (id === obj[i]["id"]) {return obj[i]["picture"]}
+  onClick(e: any) {
+    function findPathByID(obj: object[], fId: number): string {
+      const cId = 'id';
+      const picture = 'picture';
+      for (const key of obj) {
+        if (fId === key[cId]) { return key[picture]; }
       }
     }
 
     e = e || window.event;
-    e =  e.target || e.srcElement;
-    let id:number = Number(e.id);
-    this.pathImg = findPathByID(this.listhotels,id);
+    e = e.target || e.srcElement;
+    const id: number = Number(e.id);
+    this.pathImg = findPathByID(this.listhotels, id);
     this.hotelChange.emit(id);
   }
 }

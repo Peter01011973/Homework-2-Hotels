@@ -7,13 +7,17 @@ import { SharedModuleModule } from './shared-module/shared-module.module';
 import { ListComponent } from './list/list.component';
 import { WeatherComponent } from './weather/weather.component';
 import { FrofileComponent } from './frofile/frofile.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
     WeatherComponent,
-    FrofileComponent
+    FrofileComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 .weather-container {
+    border-radius: 10px;
     background-color:  #A299CA;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

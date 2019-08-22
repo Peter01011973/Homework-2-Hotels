@@ -1,0 +1,10 @@
+.navbar {
+    justify-content: space-between;
+    background-color: #A299CA;
+    color:white;
+}
+
+a {
+    padding-right: 1rem;
+    color: white;
+}

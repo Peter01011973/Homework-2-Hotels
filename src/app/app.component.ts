@@ -1,17 +1,17 @@
 import { Component, OnInit, Output, Input } from '@angular/core';
 import { hotels } from './hotels-list';
 
-type TWeather = {
-  temperature: number,
-  wind: number,
-  icon: string
-};
+interface TWeather {
+  temperature: number;
+  wind: number;
+  icon: string;
+}
 
-type TProfile = {
-  followers: number,
-  following: number,
-  photo: string
-};
+interface TProfile {
+  followers: number;
+  following: number;
+  photo: string;
+}
 
 @Component({
   selector: 'app-root',
@@ -19,18 +19,24 @@ type TProfile = {
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  
-  hotels:Object[];
-  weather = new Object() as TWeather;
-  profile = new Object() as TProfile;
-  id:number = 0;
-  
+  hotels: object[];
+  weather = {
+    temperature: 12,
+    wind: 11,
+    icon: 'assets/icons/sun.png'
+  };
+  profile = {
+    followers: 112,
+    following: 11,
+    photo: 'assets/images/b1.jpeg'
+  };
+  id = 0;
   ngOnInit() {
-    this.hotels=hotels;
+    this.hotels = hotels;
   }
-  changeHotel(id:number) {
-    this.id=id;
-    this.weather=hotels[id]["weather"];
-    this.profile=hotels[id]["profile"];
+  changeHotel(id: number) {
+    this.id = id;
+    this.weather = hotels[id].weather;
+    this.profile = hotels[id].profile;
   }
 }
