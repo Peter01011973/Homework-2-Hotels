@@ -20,16 +20,8 @@ interface TProfile {
 })
 export class AppComponent implements OnInit {
   hotels: object[];
-  weather = {
-    temperature: 12,
-    wind: 11,
-    icon: 'assets/icons/sun.png'
-  };
-  profile = {
-    followers: 112,
-    following: 11,
-    photo: 'assets/images/b1.jpeg'
-  };
+  weather = hotels[0].weather;
+  profile = hotels[0].profile;
   id = 0;
   ngOnInit() {
     this.hotels = hotels;

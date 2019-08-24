@@ -1,7 +1,7 @@
 <div class="container">
     <img [src]='pathImg' class="img-thumbnail hotelimg">
     <div class="hotellist">
-    <div *ngFor="let hotel of listhotels" class="abouthotel">
+    <div *ngFor="let hotel of listhotels" class="abouthotel" on-click="onClick(hotel)">
             <div class="block">
                 <h5 style="color: rgb(75, 56, 22)">{{hotel.title}}</h5>
                 <div class="block">
@@ -11,7 +11,7 @@
                 <p>{{hotel.address}}</p>
                 <p>{{hotel.description}}</p>
                 <h6>{{hotel.phone}}</h6>
-                <button class="btn btn-primary" id="{{hotel.id}}" (click)="onClick(this.id)">Select this one</button>
+                <button class="btn btn-primary" id="{{hotel.id}}" on-click="onClick(hotel)">Select this one</button>
             </div>
         </div>
     </div>

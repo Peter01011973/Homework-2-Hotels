@@ -1,4 +1,5 @@
 import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
+import { Hotel } from '../hotels-list';
 
 @Component({
   selector: 'app-list',
@@ -8,23 +9,17 @@ import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 export class ListComponent {
   public pathImg = 'assets/images/1.jpeg';
   @Output() hotelChange = new EventEmitter();
-  @Input() listhotels: object[];
+  @Input() listhotels: Hotel[];
     constructor() {
     }
 
-  onClick(e: any) {
-    function findPathByID(obj: object[], fId: number): string {
-      const cId = 'id';
-      const picture = 'picture';
+  onClick(hotel: Hotel) {
+    function findPathByID(obj: Hotel[], fId: number): string {
       for (const key of obj) {
-        if (fId === key[cId]) { return key[picture]; }
+        if (fId === key.id) { return key.picture; }
       }
     }
-
-    e = e || window.event;
-    e = e.target || e.srcElement;
-    const id: number = Number(e.id);
-    this.pathImg = findPathByID(this.listhotels, id);
-    this.hotelChange.emit(id);
+    this.pathImg = findPathByID(this.listhotels, hotel.id);
+    this.hotelChange.emit(hotel.id);
   }
 }
